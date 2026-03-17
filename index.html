@@ -225,15 +225,13 @@
                             </div>
 
                             <div class="video-frame-container" id="video-container"
-                                style="width: 100%; flex: auto; max-height: 315px;"
-                                onclick="this.innerHTML='<iframe width=\'100%\' height=\'100%\' src=\'https://www.youtube.com/embed/SA7zQGog_HE?autoplay=1\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen></iframe>'; this.style.paddingBottom='0';">
-
-                                <img src="maxresdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
-
-                                <div class="play-button"></div>
-
+                                style="width: 100%; flex: auto; max-height: 315px; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                    src="https://www.youtube.com/embed/SA7zQGog_HE" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
-
                         </div>
 
                     </div>
